@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Tickets</title>
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <!--<div class="moviecontainer">
+        <label>Select Movie Theater</label>
+        <select  id="movie">
+            <option value="500">PVR Cinemas</option>
+            <option value="700">INOX Theatre</option>
+            <option value="600">Cinepolis</option>
+            <option value="300">SRS Cinema</option>
+            <option value="350">Big Cinemas</option>
+            <option value="250">Miraj Cinemas</option>
+            <option value="200">AMB Cinemas</option>
+            <option value="800">Prasads IMAX</option>
+            <option value="150">E Square Talkies</option>
+        </select>
+        <div class="day">
+            <label>Select Day</label>
+            <select id="day">
+                <option value="25">25-06-23</option>
+                <option value="26">26-06-23</option>
+                <option value="27">27-06-23</option>
+            </select>
+        </div>
+        <div class="timecontainer">
+            <label>Select Time</label>
+            <select  id="time">
+                <option value="10">10:00 A.M</option>
+                <option value="1">1:00 P.M</option>
+                <option value="4">4:00 P.M</option>
+                <option value="7">7:00 P.M</option>
+            </select>
+        </div>
+
+    </div>-->
+    <form method="post" action="tickets.php">
+        <div class="moviecontainer">
+            <label>Select Movie Theater</label>
+            <select  id="movie" name="movie">
+                <option value="500">PVR Cinemas</option>
+                <option value="700">INOX Theatre</option>
+                <option value="600">Cinepolis</option>
+                <option value="300">SRS Cinema</option>
+                <option value="350">Big Cinemas</option>
+                <option value="250">Miraj Cinemas</option>
+                <option value="200">AMB Cinemas</option>
+                <option value="800">Prasads IMAX</option>
+                <option value="150">E Square Talkies</option>
+            </select>
+        <div class="day">
+            <label>Select Day</label>
+            <select id="day" name="day">
+                <option value="25">25-06-23</option>
+                <option value="26">26-06-23</option>
+                <option value="27">27-06-23</option>
+            </select>
+        </div>
+        <div class="timecontainer">
+            <label>Select Time</label>
+            <select  id="time" name="time">
+                <option value="10">10:00 A.M</option>
+                <option value="1">1:00 P.M</option>
+                <option value="4">4:00 P.M</option>
+                <option value="7">7:00 P.M</option>
+            </select>
+        </div>
+
+        </div>
+        
+    </form>
+    
+    
+    
+    <ul class="showcase">
+        <li>
+            <div class="seatna"></div>
+            <small>N/A</small>
+        </li>
+        <li>
+            <div class="seatselected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="seatoccupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="screen"></div>
+        <div class="row">
+            <div class="labelseat">A</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">B</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">C</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">D</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">E</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">F</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+        <div class="row">
+            <div class="labelseat">G</div>
+            <div class="seat">1</div>
+            <div class="seat">2</div>
+            <div class="seat">3</div>
+            <div class="seat">4</div>
+            <div class="seat">5</div>
+            <div class="seat">6</div>
+            <div class="seat">7</div>
+            <div class="seat">8</div>
+        </div>
+    </div>
+    <p class="text">
+        You have selected <span id="count">0</span> seats for a price of Rupees <span id="total">0</span>
+    </p>
+    <div class="blackbar">
+        <a href="payment.php" id="payment">Payment Checkout<i class="bi bi-credit-card"></i></a>
+    </div>
+    
+    <script src="tickets.js"></script>
+</body>
+</html>
